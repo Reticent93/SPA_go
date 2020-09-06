@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func logging(next http.Handler) http.Handler  {
+func logging(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		next.ServeHTTP(w, r)
 	})
@@ -17,14 +17,13 @@ func logging(next http.Handler) http.Handler  {
 
 var templates = template.Must(template.ParseFiles("./templates/base.html", "./templates/body.html"))
 
-func index() http.Handler  {
+func index() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		s := struct {
-			Title template.HTML
+			Title        template.HTML
 			BusinessName string
 		}{
 			Title: template.HTML("SpaceWalkers"),
-			BusinessName: "Business",
 		}
 
 		err := templates.ExecuteTemplate(w, "base", &s)
@@ -36,16 +35,13 @@ func index() http.Handler  {
 	})
 }
 
-func public() http.Handler  {
+func public() http.Handler {
 	return http.StripPrefix("/public/", http.FileServer(http.Dir("./public")))
 }
 
-
-
-
 func main() {
 	mux := http.NewServeMux()
-	mux.Handle("/public/",logging(public()))
+	mux.Handle("/public/", logging(public()))
 	mux.Handle("/", logging(index()))
 
 	port, ok := os.LookupEnv("PORT")
@@ -54,11 +50,11 @@ func main() {
 	}
 	addr := fmt.Sprintf(":%s", port)
 	server := http.Server{
-		Addr: addr,
-		Handler: mux,
-		ReadHeaderTimeout: 15 *time.Second,
-		WriteTimeout: 15 *time.Second,
-		IdleTimeout: 15 *time.Second,
+		Addr:              addr,
+		Handler:           mux,
+		ReadHeaderTimeout: 15 * time.Second,
+		WriteTimeout:      15 * time.Second,
+		IdleTimeout:       15 * time.Second,
 	}
 	log.Println("main: running on port", port)
 	if err := server.ListenAndServe(); err != nil {
