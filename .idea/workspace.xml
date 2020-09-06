@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1113483-dc6b-4c9d-8ae8-247bd3c48ace" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a1113483-dc6b-4c9d-8ae8-247bd3c48ace" name="Default Changelist" comment="finished styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +35,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -58,10 +56,23 @@
       <option name="presentableId" value="Default" />
       <updated>1599346959681</updated>
     </task>
+    <task id="LOCAL-00001" summary="working on styling">
+      <created>1599387989384</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599387989384</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working on styling" />
+    <MESSAGE value="finished styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished styling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2758" y="418" key="Github.ShareDialog" timestamp="1599375970988">
@@ -72,6 +83,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2664" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599375977987" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599387991577">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599387991577" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599366475695">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
